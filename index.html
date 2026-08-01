@@ -43,6 +43,7 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
@@ -262,12 +263,55 @@
       </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="placeholder-section perspective-section">
+      <div class="section-content">
+        <h2>Experience</h2>
+        <div class="cert-card" style="cursor: default; text-decoration: none;">
+          <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <defs>
+              <linearGradient id="expGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#3b82f6" />
+                <stop offset="100%" stop-color="#8b5cf6" />
+              </linearGradient>
+            </defs>
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" stroke="url(#expGrad1)" stroke-width="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" stroke="url(#expGrad1)" stroke-width="2"></path>
+          </svg>
+          <div class="cert-info">
+            <h3>Teaching Assistant – Programming Fundamentals & OOP</h3>
+            <h4>University of Engineering and Technology, Lahore <span>• Sept 2024 – May 2025</span></h4>
+            <p>Supported lab instruction and grading across two semesters. Mentored students in debugging and problem decomposition.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" style="cursor: default; text-decoration: none;">
+          <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <defs>
+              <linearGradient id="expGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#10b981" />
+                <stop offset="100%" stop-color="#3b82f6" />
+              </linearGradient>
+            </defs>
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="url(#expGrad2)" stroke-width="2"></path>
+          </svg>
+          <div class="cert-info">
+            <h3>AI/ML Intern</h3>
+            <h4>Arch Technologies (Remote) <span>• Sept 2025 – Oct 2025</span></h4>
+            <p>Built and evaluated supervised learning models including spam email classifier and MNIST digit recognition using Scikit-learn and TensorFlow/Keras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="placeholder-section perspective-section">
       <div class="section-content">
         <h2>Projects</h2>
         <div class="projects-grid">
-          <a href="https://github.com/talha-techs/talha-techs.github.io" target="_blank" class="project-card">
+          <a href="https://github.com/Smoking-Detector" target="_blank" class="project-card">
             <div class="project-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -277,17 +321,57 @@
               </svg>
             </div>
             <div class="project-info">
-              <h3>Portfolio Website</h3>
-              <p>My personal portfolio with custom domain, dark/light mode, GSAP animations, pixel card, AI bot widget, and EmailJS contact form. Hosted on GitHub Pages.</p>
+              <h3>SmokeSentinel</h3>
+              <p>AI-Powered Smoking Detection System using YOLOv8s. Built a full-stack monitoring app with Flask REST API and React dashboard for live alerts.</p>
               <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Vite</span>
+                <span>Python</span>
+                <span>YOLOv8</span>
+                <span>Flask</span>
+                <span>React.js</span>
               </div>
             </div>
           </a>
-          <a href="https://github.com/talha-techs" target="_blank" class="project-card">
+
+          <a href="https://github.com/CarPricePrediction" target="_blank" class="project-card">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="project-info">
+              <h3>Car Price Prediction</h3>
+              <p>End-to-end regression ML pipeline on PakWheels dataset. Applied categorical encoding, feature selection, and benchmarked multiple regression models.</p>
+              <div class="project-tags">
+                <span>Pandas</span>
+                <span>Scikit-learn</span>
+                <span>NumPy</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/Spam-Email-Classifier" target="_blank" class="project-card">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="project-info">
+              <h3>Spam Email Classifier</h3>
+              <p>Binary text classification model using NLP preprocessing (TF-IDF). Trained multiple classifiers (Naive Bayes, SVM) to distinguish spam from legitimate emails.</p>
+              <div class="project-tags">
+                <span>NLP</span>
+                <span>Scikit-learn</span>
+                <span>Python</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/OrganizeUp" target="_blank" class="project-card">
             <div class="project-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -299,32 +383,13 @@
               </svg>
             </div>
             <div class="project-info">
-              <h3>Student Task Tracker</h3>
-              <p>A full-stack productivity app for students — manage assignments, deadlines, and reminders. Features JWT auth and MongoDB backend.</p>
+              <h3>OrganizeUp</h3>
+              <p>MERN-stack resource management platform for students. Designed RESTful API, scalable MongoDB schema, and component-based React frontend.</p>
               <div class="project-tags">
+                <span>MongoDB</span>
+                <span>Express</span>
                 <span>React</span>
                 <span>Node.js</span>
-                <span>MongoDB</span>
-              </div>
-            </div>
-          </a>
-          <a href="https://github.com/talha-techs" target="_blank" class="project-card">
-            <div class="project-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
-                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
-                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
-                <line x1="12" y1="20" x2="12.01" y2="20"></line>
-              </svg>
-            </div>
-            <div class="project-info">
-              <h3>REST API Starter Kit</h3>
-              <p>Production-ready Node.js + Express boilerplate with JWT auth, input validation, error handling, and MongoDB integration.</p>
-              <div class="project-tags">
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>JWT</span>
               </div>
             </div>
           </a>
@@ -336,6 +401,7 @@
     <section id="certifications" class="placeholder-section perspective-section">
       <div class="section-content">
         <h2>Certifications</h2>
+        
         <a href="#" target="_blank" class="cert-card" aria-label="View Certificate">
           <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -353,11 +419,12 @@
             <path d="M12 5L12 11 M9 8L15 8" stroke="white" stroke-width="2"></path>
           </svg>
           <div class="cert-info">
-            <h3>Responsive Web Design Certification</h3>
-            <h4>freeCodeCamp</h4>
-            <p>Comprehensive training in HTML, CSS, Flexbox, Grid, and responsive design principles.</p>
+            <h3>Google AI Essentials</h3>
+            <h4>Google / Coursera <span>• Aug 2025</span></h4>
+            <p>Mastered core AI concepts, generative AI applications, and ethical considerations for AI deployment.</p>
           </div>
         </a>
+
         <a href="#" target="_blank" class="cert-card" aria-label="View Certificate">
           <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -367,17 +434,31 @@
                 <stop offset="100%" stop-color="#8b5cf6" />
               </linearGradient>
             </defs>
-            <path
-              d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z"
-              fill="url(#certGrad2)" stroke="none"></path>
-            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" stroke="url(#certGrad2)" fill="none"
-              stroke-width="2"></polyline>
-            <path d="M12 5L12 11 M9 8L15 8" stroke="white" stroke-width="2"></path>
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="url(#certGrad2)" stroke-width="2"></path>
           </svg>
           <div class="cert-info">
-            <h3>JavaScript Algorithms &amp; Data Structures</h3>
-            <h4>freeCodeCamp</h4>
-            <p>In-depth training in JS fundamentals, algorithms, OOP, functional programming, and data structures.</p>
+            <h3>AWS Cloud Practitioner Essentials</h3>
+            <h4>AWS / Coursera <span>• Nov 2025</span></h4>
+            <p>Comprehensive training in AWS Cloud concepts, security, architecture, pricing, and support.</p>
+          </div>
+        </a>
+
+        <a href="#" target="_blank" class="cert-card" aria-label="View Certificate">
+          <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <defs>
+              <linearGradient id="certGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ef4444" />
+                <stop offset="100%" stop-color="#f59e0b" />
+              </linearGradient>
+            </defs>
+            <circle cx="12" cy="12" r="10" stroke="url(#certGrad3)" stroke-width="2"></circle>
+            <path d="M2 12h20 M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="url(#certGrad3)" stroke-width="2"></path>
+          </svg>
+          <div class="cert-info">
+            <h3>MERN Stack Front To Back</h3>
+            <h4>Packt / Coursera <span>• Aug 2025</span></h4>
+            <p>Full stack web development including React, Redux, Node.js, Express, and MongoDB.</p>
           </div>
         </a>
       </div>
