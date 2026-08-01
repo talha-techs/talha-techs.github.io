@@ -394,7 +394,7 @@ function initContactForm() {
       };
 
       const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_6kje77i';
-      const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_mdw0sgd';
+      const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_z6904g4';
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '_z4-1BDLxKtz2XZxy';
 
       emailjs.send(serviceID, templateID, templateParams, publicKey)
