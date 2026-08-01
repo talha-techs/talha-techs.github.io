@@ -35,7 +35,7 @@ jobs:
         run: npm run build
 
       - name: Add CNAME to dist (custom domain)
-        run: echo "www.muhammad-talha.me" > dist/CNAME
+        run: echo "muhammad-talha.me" > dist/CNAME
 
       - name: Add .nojekyll to dist
         run: touch dist/.nojekyll
