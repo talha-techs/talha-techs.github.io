@@ -386,8 +386,11 @@ function initContactForm() {
 
       const templateParams = {
         user_name:  form.user_name.value,
+        name:       form.user_name.value,
         user_email: form.user_email.value,
+        email:      form.user_email.value,
         message:    form.message.value,
+        title:      'Portfolio Contact Form',
         to_email:   'hello@muhammad-talha.me',
         to_name:    'Muhammad Talha',
         reply_to:   form.user_email.value,
