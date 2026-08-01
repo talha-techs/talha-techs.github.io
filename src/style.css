@@ -790,3 +790,36 @@ body.light-mode .form-group textarea {
     width: 240px;
   }
 }
+
+/* ========================================== */
+/* Custom SVGs Cursors per Section */
+/* ========================================== */
+body {
+  /* Default Global Cursor: Small Neon Dot */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="%237c5cff" stroke="%2300d4ff" stroke-width="2"/></svg>') 12 12, auto;
+}
+
+a, button, .tag, .contact-card {
+  /* Interactive Elements Pointer: Glowing Ring */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="10" fill="rgba(124, 92, 255, 0.2)" stroke="%237c5cff" stroke-width="2"/><circle cx="16" cy="16" r="4" fill="%23fff"/></svg>') 16 16, pointer !important;
+}
+
+#hero {
+  /* Hero Section: Precision Crosshair */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="4" fill="%2300d4ff"/><path d="M16 4v8m0 8v8m12-12h-8M8 16H4" stroke="%2300d4ff" stroke-width="2" stroke-linecap="round"/></svg>') 16 16, crosshair;
+}
+
+#about, #skills {
+  /* About & Skills: Developer Brackets */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="%2310b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="10 22 4 16 10 10"></polyline><polyline points="22 10 28 16 22 22"></polyline></svg>') 16 16, text;
+}
+
+#projects {
+  /* Projects Section: Eye / View */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="%23f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16s5-10 14-10 14 10 14 10-5 10-14 10-14-10-14-10z"></path><circle cx="16" cy="16" r="4"></circle></svg>') 16 16, auto;
+}
+
+#contact {
+  /* Contact Section: Paper Plane */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="%23ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="28" y1="4" x2="14" y2="18"></line><polygon points="28 4 20 28 14 18 4 12 28 4"></polygon></svg>') 16 16, text;
+}
