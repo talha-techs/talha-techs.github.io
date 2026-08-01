@@ -391,7 +391,7 @@ function initContactForm() {
         email:      form.user_email.value,
         message:    form.message.value,
         title:      'Portfolio Contact Form',
-        to_email:   'hello@muhammad-talha.me',
+        to_email:   'mtalha1501@gmail.com',
         to_name:    'Muhammad Talha',
         reply_to:   form.user_email.value,
       };
