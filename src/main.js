@@ -336,6 +336,7 @@ function startRandomFlips() {
 // AI Bot Observer Logic
 function initAIBot() {
   const bot = document.getElementById('ai-bot');
+  if (!bot) return; // Safeguard if the bot is removed from HTML
   const eyes = bot.querySelectorAll('.bot-eye');
   const tooltip = bot.querySelector('.bot-tooltip');
 
