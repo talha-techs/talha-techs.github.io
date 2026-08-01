@@ -2,6 +2,7 @@ import './style.css'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { injectIcons } from './icons.js'
+import emailjs from '@emailjs/browser'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -392,7 +393,11 @@ function initContactForm() {
         reply_to:   form.user_email.value,
       };
 
-      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+      const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_6kje77i';
+      const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_mdw0sgd';
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '_z4-1BDLxKtz2XZxy';
+
+      emailjs.send(serviceID, templateID, templateParams, publicKey)
         .then(() => {
           result.innerHTML = "Message sent successfully! ✅";
           result.className = "form-result success";
