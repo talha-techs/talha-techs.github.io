@@ -43,7 +43,7 @@ export const iconMapping = {
   'T': { svg: simpleIcons.siTailwindcss.svg, hex: simpleIcons.siTailwindcss.hex },
   'A_last': { svg: antigravitySvg, hex: 'none', isGradient: true },
   'L': { svg: simpleIcons.siLinux.svg, hex: simpleIcons.siLinux.hex },
-  'H_last': { svg: simpleIcons.siHeroku.svg, hex: simpleIcons.siHeroku.hex },
+  'H_last': { svg: simpleIcons.siHugo.svg, hex: simpleIcons.siHugo.hex },
   'A_end': { svg: simpleIcons.siAndroid.svg, hex: simpleIcons.siAndroid.hex }
 };
 
