@@ -29,26 +29,24 @@ const infoWarningSvg = `<svg class="info-warning-svg" viewBox="0 0 24 24" xmlns=
 </svg>`;
 
 export const iconMapping = {
-  // RAKESH
-  'R': { svg: simpleIcons.siRust.svg, hex: simpleIcons.siRust.hex },
-  'A_first': { svg: simpleIcons.siAnthropic.svg, hex: 'var(--dynamic-anthropic)', isAnthropic: true },
-  'K_first': { svg: simpleIcons.siKeras.svg, hex: simpleIcons.siKeras.hex },
-  'E_first': { isImage: true, src: 'https://assets.emergent.sh/assets/elogo.gif' },
-  'S': { svg: simpleIcons.siSupabase.svg, hex: simpleIcons.siSupabase.hex },
+  // MUHAMMAD
+  'M': { svg: simpleIcons.siMongodb.svg, hex: simpleIcons.siMongodb.hex },
+  'U': { svg: simpleIcons.siUbuntu.svg, hex: simpleIcons.siUbuntu.hex },
   'H': { svg: simpleIcons.siHtml5.svg, hex: simpleIcons.siHtml5.hex },
+  'A_first': { svg: simpleIcons.siAnthropic.svg, hex: 'var(--dynamic-anthropic)' },
+  'M_2': { svg: simpleIcons.siMysql.svg, hex: simpleIcons.siMysql.hex },
+  'M_3': { svg: simpleIcons.siMarkdown.svg, hex: simpleIcons.siMarkdown.hex },
+  'A_2': { svg: simpleIcons.siAngular.svg, hex: simpleIcons.siAngular.hex },
+  'D': { svg: simpleIcons.siDocker.svg, hex: simpleIcons.siDocker.hex },
 
-  // KANNEPELLI
-  'K_last': { svg: simpleIcons.siKubernetes.svg, hex: simpleIcons.siKubernetes.hex },
-  'A_last': { svg: antigravitySvg, hex: 'none', isGradient: true }, // The SVG defines its own colors
-  'N_first': { svg: simpleIcons.siNumpy.svg, hex: simpleIcons.siNumpy.hex },
-  'N_last': { svg: simpleIcons.siNextdotjs.svg, hex: 'var(--dynamic-anthropic)' },
-  'E_mid': { svg: simpleIcons.siExpo.svg, hex: simpleIcons.siExpo.hex },
-  'P': { svg: simpleIcons.siPython.svg, hex: simpleIcons.siPython.hex },
-  'E_last': { svg: simpleIcons.siExpress.svg, hex: 'var(--dynamic-anthropic)' },
-  'L_first': { isImage: true, src: 'https://brandlogos.net/wp-content/uploads/2015/10/l_death_note-logo_brandlogos.net_x4xl0-768x893.png', invertInDarkMode: true },
-  'L_last': { svg: simpleIcons.siLinux.svg, hex: simpleIcons.siLinux.hex },
-  'I': { svg: infoWarningSvg, hex: '0ea5e9' } // Deep sky blue / cyan 'I' that morphs
+  // TALHA
+  'T': { svg: simpleIcons.siTailwindcss.svg, hex: simpleIcons.siTailwindcss.hex },
+  'A_last': { svg: antigravitySvg, hex: 'none', isGradient: true },
+  'L': { svg: simpleIcons.siLinux.svg, hex: simpleIcons.siLinux.hex },
+  'H_last': { svg: simpleIcons.siHeroku.svg, hex: simpleIcons.siHeroku.hex },
+  'A_end': { svg: simpleIcons.siAndroid.svg, hex: simpleIcons.siAndroid.hex }
 };
+
 
 export function injectIcons() {
   document.querySelectorAll('.letter-wrapper').forEach(wrapper => {
