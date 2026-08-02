@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm()
   initResumeAnimation()
   initAIBot()
+  initSwipers()
 })
 
 function initThemeToggle() {
@@ -348,7 +349,6 @@ function initAIBot() {
 
     // Calculate angle
     const angle = Math.atan2(e.clientY - botY, e.clientX - botX);
-
     // Limit eye distance within the orb
     const distance = Math.min(4, Math.hypot(e.clientX - botX, e.clientY - botY) / 10);
     const eyeX = Math.cos(angle) * distance;
@@ -445,4 +445,37 @@ function initResumeAnimation() {
         }, 3000);
       })
   });
+}
+
+function initSwipers() {
+  if (window.Swiper) {
+    new Swiper('.projects-swiper', {
+      direction: 'vertical',
+      slidesPerView: 1,
+      centeredSlides: true,
+      mousewheel: { forceToAxis: true },
+      keyboard: { enabled: true },
+      pagination: { 
+        el: '.projects-pagination', 
+        clickable: true 
+      },
+      effect: 'slide'
+    });
+
+    new Swiper('.certs-swiper', {
+      direction: 'horizontal',
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      mousewheel: { forceToAxis: true },
+      keyboard: { enabled: true },
+      pagination: { 
+        el: '.certs-pagination', 
+        clickable: true 
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  }
 }

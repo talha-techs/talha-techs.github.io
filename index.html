@@ -14,6 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./src/style.css" />
 
 </head>
@@ -359,136 +360,100 @@
     <section id="projects" class="placeholder-section perspective-section">
       <div class="section-content">
         <h2>Projects</h2>
-        <div class="projects-grid">
-          <a href="https://github.com/mtalha1501/Smoking-Detector" target="_blank" class="project-card">
-            <div class="project-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                </path>
-              </svg>
-            </div>
-            <div class="project-info">
-              <h3>SmokeSentinel</h3>
-              <p>AI-Powered Smoking Detection System using YOLOv8s. Built a full-stack monitoring app with Flask REST
-                API and React dashboard for live alerts.</p>
-              <div class="project-tags">
-                <span>Python</span>
-                <span>YOLOv8</span>
-                <span>Flask</span>
-                <span>React.js</span>
+        <div class="swiper projects-swiper">
+          <div class="swiper-wrapper">
+            <!-- Project 1 -->
+            <div class="swiper-slide project-slide">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Project Cover" class="project-cover" />
+              <div class="project-content">
+                <h3>SmokeSentinel</h3>
+                <div class="project-tags">
+                  <span>Python</span><span>YOLOv8</span><span>Flask</span><span>React.js</span>
+                </div>
+                <p>AI-Powered Smoking Detection System using YOLOv8s. Built a full-stack monitoring app with Flask REST API and React dashboard for live alerts.</p>
+                <div class="project-actions">
+                  <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+                  <a href="https://github.com/mtalha1501/Smoking-Detector" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                </div>
               </div>
             </div>
-          </a>
-
-          <a href="https://github.com/mtalha1501/CarPricePrediction" target="_blank" class="project-card">
-            <div class="project-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-            </div>
-            <div class="project-info">
-              <h3>Car Price Prediction</h3>
-              <p>End-to-end regression ML pipeline on PakWheels dataset. Applied categorical encoding, feature
-                selection, and benchmarked multiple regression models.</p>
-              <div class="project-tags">
-                <span>Pandas</span>
-                <span>Scikit-learn</span>
-                <span>NumPy</span>
+            <!-- Project 2 -->
+            <div class="swiper-slide project-slide">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Project Cover" class="project-cover" />
+              <div class="project-content">
+                <h3>Car Price Prediction</h3>
+                <div class="project-tags">
+                  <span>Pandas</span><span>Scikit-learn</span><span>NumPy</span>
+                </div>
+                <p>End-to-end regression ML pipeline on PakWheels dataset. Applied categorical encoding, feature selection, and benchmarked multiple regression models.</p>
+                <div class="project-actions">
+                  <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+                  <a href="https://github.com/mtalha1501/CarPricePrediction" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                </div>
               </div>
             </div>
-          </a>
-
-          <a href="https://github.com/mtalha1501/Spam-Email-Classifier" target="_blank" class="project-card">
-            <div class="project-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </div>
-            <div class="project-info">
-              <h3>Spam Email Classifier</h3>
-              <p>Binary text classification model using NLP preprocessing (TF-IDF). Trained multiple classifiers (Naive
-                Bayes, SVM) to distinguish spam from legitimate emails.</p>
-              <div class="project-tags">
-                <span>NLP</span>
-                <span>Scikit-learn</span>
-                <span>Python</span>
+            <!-- Project 3 -->
+            <div class="swiper-slide project-slide">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Project Cover" class="project-cover" />
+              <div class="project-content">
+                <h3>Spam Email Classifier</h3>
+                <div class="project-tags">
+                  <span>NLP</span><span>Scikit-learn</span><span>Python</span>
+                </div>
+                <p>Binary text classification model using NLP preprocessing (TF-IDF). Trained multiple classifiers (Naive Bayes, SVM) to distinguish spam from legitimate emails.</p>
+                <div class="project-actions">
+                  <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+                  <a href="https://github.com/mtalha1501/Spam-Email-Classifier" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                </div>
               </div>
             </div>
-          </a>
-
-          <a href="https://github.com/mtalha1501/OrganizeUp" target="_blank" class="project-card">
-            <div class="project-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-              </svg>
-            </div>
-            <div class="project-info">
-              <h3>OrganizeUp</h3>
-              <p>MERN-stack resource management platform for students. Designed RESTful API, scalable MongoDB schema,
-                and component-based React frontend.</p>
-              <div class="project-tags">
-                <span>MongoDB</span>
-                <span>Express</span>
-                <span>React</span>
-                <span>Node.js</span>
+            <!-- Project 4 -->
+            <div class="swiper-slide project-slide">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Project Cover" class="project-cover" />
+              <div class="project-content">
+                <h3>OrganizeUp</h3>
+                <div class="project-tags">
+                  <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+                </div>
+                <p>MERN-stack resource management platform for students. Designed RESTful API, scalable MongoDB schema, and component-based React frontend.</p>
+                <div class="project-actions">
+                  <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+                  <a href="https://github.com/mtalha1501/OrganizeUp" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                </div>
               </div>
             </div>
-          </a>
-
-          <a href="https://github.com/mtalha1501" target="_blank" class="project-card">
-            <div class="project-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="3" y1="9" x2="21" y2="9"></line>
-                <line x1="9" y1="21" x2="9" y2="9"></line>
-              </svg>
-            </div>
-            <div class="project-info">
-              <h3>Solitaire Game</h3>
-              <p>Classic Solitaire card game implemented in C# .NET. Features game state management, drag-and-drop
-                mechanics, and custom UI components.</p>
-              <div class="project-tags">
-                <span>C#</span>
-                <span>.NET</span>
-                <span>WinForms</span>
+            <!-- Project 5 -->
+            <div class="swiper-slide project-slide">
+              <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=800&q=80" alt="Project Cover" class="project-cover" />
+              <div class="project-content">
+                <h3>Solitaire Game</h3>
+                <div class="project-tags">
+                  <span>C#</span><span>.NET</span><span>WinForms</span>
+                </div>
+                <p>Classic Solitaire card game implemented in C# .NET. Features game state management, drag-and-drop mechanics, and custom UI components.</p>
+                <div class="project-actions">
+                  <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+                  <a href="https://github.com/mtalha1501" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                </div>
               </div>
             </div>
-          </a>
-
-          <a href="https://github.com/mtalha1501" target="_blank" class="project-card">
-            <div class="project-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                <line x1="12" y1="17" x2="12.01" y2="17"></line>
-              </svg>
-            </div>
-            <div class="project-info">
-              <h3>Quiz System App</h3>
-              <p>Interactive quiz application built with C# .NET. Includes question banks, timed sessions, score
-                tracking, and an administrative dashboard.</p>
-              <div class="project-tags">
-                <span>C#</span>
-                <span>.NET</span>
-                <span>SQL</span>
+            <!-- Project 6 -->
+            <div class="swiper-slide project-slide">
+              <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=800&q=80" alt="Project Cover" class="project-cover" />
+              <div class="project-content">
+                <h3>Quiz System App</h3>
+                <div class="project-tags">
+                  <span>C#</span><span>.NET</span><span>SQL</span>
+                </div>
+                <p>Interactive quiz application built with C# .NET. Includes question banks, timed sessions, score tracking, and an administrative dashboard.</p>
+                <div class="project-actions">
+                  <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+                  <a href="https://github.com/mtalha1501" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                </div>
               </div>
             </div>
-          </a>
+          </div>
+          <div class="swiper-pagination projects-pagination"></div>
         </div>
       </div>
     </section>
@@ -498,68 +463,73 @@
       <div class="section-content">
         <h2>Certifications</h2>
 
-        <a href="#" target="_blank" class="cert-card" aria-label="View Certificate">
-          <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <defs>
-              <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#10b981" />
-                <stop offset="100%" stop-color="#3b82f6" />
-              </linearGradient>
-            </defs>
-            <path
-              d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z"
-              fill="url(#certGrad)" stroke="none"></path>
-            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" stroke="url(#certGrad)" fill="none"
-              stroke-width="2"></polyline>
-            <path d="M12 5L12 11 M9 8L15 8" stroke="white" stroke-width="2"></path>
-          </svg>
-          <div class="cert-info">
-            <h3>Google AI Essentials</h3>
-            <h4>Google / Coursera <span>• Aug 2025</span></h4>
-            <p>Mastered core AI concepts, generative AI applications, and ethical considerations for AI deployment.</p>
+        <div class="swiper certs-swiper">
+          <div class="swiper-wrapper">
+            <!-- Cert 1 -->
+            <div class="swiper-slide cert-slide">
+              <a href="#" target="_blank" class="cert-card-inner" aria-label="View Certificate">
+                <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <defs>
+                    <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#10b981" />
+                      <stop offset="100%" stop-color="#3b82f6" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z" fill="url(#certGrad)" stroke="none"></path>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" stroke="url(#certGrad)" fill="none" stroke-width="2"></polyline>
+                  <path d="M12 5L12 11 M9 8L15 8" stroke="white" stroke-width="2"></path>
+                </svg>
+                <div class="cert-info">
+                  <h3>Google AI Essentials</h3>
+                  <h4>Google / Coursera <span>• Aug 2025</span></h4>
+                  <p>Mastered core AI concepts, generative AI applications, and ethical considerations for AI deployment.</p>
+                </div>
+              </a>
+            </div>
+            <!-- Cert 2 -->
+            <div class="swiper-slide cert-slide">
+              <a href="#" target="_blank" class="cert-card-inner" aria-label="View Certificate">
+                <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <defs>
+                    <linearGradient id="certGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#f59e0b" />
+                      <stop offset="100%" stop-color="#8b5cf6" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="url(#certGrad2)" stroke-width="2"></path>
+                </svg>
+                <div class="cert-info">
+                  <h3>AWS Cloud Practitioner Essentials</h3>
+                  <h4>AWS / Coursera <span>• Nov 2025</span></h4>
+                  <p>Comprehensive training in AWS Cloud concepts, security, architecture, pricing, and support.</p>
+                </div>
+              </a>
+            </div>
+            <!-- Cert 3 -->
+            <div class="swiper-slide cert-slide">
+              <a href="#" target="_blank" class="cert-card-inner" aria-label="View Certificate">
+                <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <defs>
+                    <linearGradient id="certGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#ef4444" />
+                      <stop offset="100%" stop-color="#f59e0b" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="12" cy="12" r="10" stroke="url(#certGrad3)" stroke-width="2"></circle>
+                  <path d="M2 12h20 M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="url(#certGrad3)" stroke-width="2"></path>
+                </svg>
+                <div class="cert-info">
+                  <h3>MERN Stack Front To Back</h3>
+                  <h4>Packt / Coursera <span>• Aug 2025</span></h4>
+                  <p>Full stack web development including React, Redux, Node.js, Express, and MongoDB.</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </a>
-
-        <a href="#" target="_blank" class="cert-card" aria-label="View Certificate">
-          <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <defs>
-              <linearGradient id="certGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#f59e0b" />
-                <stop offset="100%" stop-color="#8b5cf6" />
-              </linearGradient>
-            </defs>
-            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="url(#certGrad2)"
-              stroke-width="2"></path>
-          </svg>
-          <div class="cert-info">
-            <h3>AWS Cloud Practitioner Essentials</h3>
-            <h4>AWS / Coursera <span>• Nov 2025</span></h4>
-            <p>Comprehensive training in AWS Cloud concepts, security, architecture, pricing, and support.</p>
-          </div>
-        </a>
-
-        <a href="#" target="_blank" class="cert-card" aria-label="View Certificate">
-          <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <defs>
-              <linearGradient id="certGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#ef4444" />
-                <stop offset="100%" stop-color="#f59e0b" />
-              </linearGradient>
-            </defs>
-            <circle cx="12" cy="12" r="10" stroke="url(#certGrad3)" stroke-width="2"></circle>
-            <path
-              d="M2 12h20 M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-              stroke="url(#certGrad3)" stroke-width="2"></path>
-          </svg>
-          <div class="cert-info">
-            <h3>MERN Stack Front To Back</h3>
-            <h4>Packt / Coursera <span>• Aug 2025</span></h4>
-            <p>Full stack web development including React, Redux, Node.js, Express, and MongoDB.</p>
-          </div>
-        </a>
+          <div class="swiper-pagination certs-pagination"></div>
+          <div class="swiper-button-next" style="color: var(--accent);"></div>
+          <div class="swiper-button-prev" style="color: var(--accent);"></div>
+        </div>
       </div>
     </section>
 
@@ -598,6 +568,7 @@
     </section>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="./src/main.js"></script>
 </body>
 

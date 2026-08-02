@@ -586,65 +586,155 @@ body.light-mode .skill-card {
   font-size: 0.95rem;
 }
 
-/* Projects & Certs */
-.project-card,
-.cert-card {
+/* Swiper Carousels General */
+.swiper {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.swiper-slide {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+.swiper-pagination-bullet {
+  background: var(--text-color) !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--accent) !important;
+}
+
+/* Projects Swiper */
+.projects-swiper {
+  height: 75vh;
+}
+.project-slide {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  background: var(--form-bg);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border: 1px solid var(--form-border);
+}
+.project-cover {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-bottom: 1px solid var(--form-border);
+}
+.project-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.project-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.project-tags span {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+  background: rgba(128, 128, 128, 0.1);
+  border-radius: 10px;
+  color: var(--accent);
+}
+.project-content p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  flex: 1;
+}
+.project-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  flex: 1;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #000;
+  border: 1px solid var(--accent);
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--accent);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--form-border);
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Certifications Swiper */
+.certs-swiper {
+  width: 100%;
+}
+.cert-slide {
+  width: 280px;
+  height: auto;
+}
+.cert-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
   background: var(--form-bg);
   border: 1px solid var(--form-border);
   padding: 2rem;
-  border-radius: 20px;
+  border-radius: 16px;
   text-decoration: none;
   color: var(--text-color);
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  align-items: center;
-  text-align: left;
+  height: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, transform 0.3s ease;
 }
-
-.project-card:hover,
-.cert-card:hover {
-  transform: translateY(-5px);
+.cert-card-inner:hover {
   border-color: var(--accent);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
-
-.project-icon,
 .cert-icon {
   background: rgba(128, 128, 128, 0.1);
   padding: 1.5rem;
   border-radius: 15px;
   color: var(--accent);
 }
-
-.project-info h3,
 .cert-info h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
-
 .cert-info h4 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--accent);
-  margin-bottom: 0.5rem;
-}
-
-.project-info p,
-.cert-info p {
-  color: var(--text-muted);
   margin-bottom: 1rem;
 }
-
-.project-tags {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.project-tags span {
-  font-size: 0.8rem;
-  padding: 0.3rem 0.8rem;
-  background: rgba(128, 128, 128, 0.1);
-  border-radius: 10px;
+.cert-info p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 /* Contact Form */
@@ -781,10 +871,8 @@ body.light-mode .form-group textarea {
     justify-content: center;
   }
 
-  .project-card,
-  .cert-card {
-    flex-direction: column;
-    text-align: center;
+  .projects-swiper {
+    height: 65vh;
   }
 
   .profile-card-wrapper,
