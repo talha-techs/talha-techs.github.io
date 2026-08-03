@@ -617,8 +617,8 @@ body.light-mode .skill-card {
 
 /* Projects Swiper */
 .projects-swiper {
-  height: 550px;
-  max-height: 65vh;
+  height: 600px;
+  max-height: 85vh;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -645,7 +645,7 @@ body.light-mode .skill-card {
   flex: 1;
 }
 .project-content h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: var(--text-color);
 }
@@ -665,7 +665,7 @@ body.light-mode .skill-card {
 .project-content p {
   color: var(--text-muted);
   margin-bottom: 1.5rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   flex: 1;
 }
