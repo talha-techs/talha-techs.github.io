@@ -1152,4 +1152,24 @@ a, button, .tag, .contact-card {
   font-weight: 500;
   opacity: 0.8;
   cursor: not-allowed;
+}
+
+/* Contact Button Animation */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent);
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 0 0 15px var(--accent), 0 0 25px var(--accent);
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent);
+    opacity: 0.8;
+  }
+}
+
+.submit-btn {
+  animation: pulseGlow 2s infinite ease-in-out;
 }
