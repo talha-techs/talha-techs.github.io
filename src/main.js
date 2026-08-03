@@ -459,7 +459,11 @@ function initSwipers() {
         el: '.projects-pagination', 
         clickable: true 
       },
-      effect: 'slide'
+      effect: 'cards',
+      grabCursor: true,
+      cardsEffect: {
+        slideShadows: true,
+      }
     });
 
     new Swiper('.certs-swiper', {

@@ -607,7 +607,11 @@ body.light-mode .skill-card {
 
 /* Projects Swiper */
 .projects-swiper {
-  height: 75vh;
+  height: 500px;
+  max-height: 65vh;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .project-slide {
   display: flex;
