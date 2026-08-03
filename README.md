@@ -1,4 +1,4 @@
-# Muhammad Talha - AI Engineer & CS Student Portfolio
+# Muhammad Talha - AI Engineer  Portfolio
 
 Welcome to my personal portfolio repository! This website showcases my projects, skills, and experience as a final-year Computer Science student at UET Lahore with a strong focus on AI Engineering and Full-Stack Development.
 
