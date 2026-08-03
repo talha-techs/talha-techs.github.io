@@ -594,8 +594,7 @@ body.light-mode .skill-card {
 .swiper-slide {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.swiper-slide:not(.swiper-slide-active) {
-  opacity: 0.4;
+.certs-swiper .swiper-slide:not(.swiper-slide-active) {
   transform: scale(0.9);
 }
 .swiper-pagination-bullet {
@@ -607,10 +606,10 @@ body.light-mode .skill-card {
 
 /* Projects Swiper */
 .projects-swiper {
-  height: 500px;
+  height: 550px;
   max-height: 65vh;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .project-slide {
