@@ -1103,3 +1103,47 @@ a, button, .tag, .contact-card {
   /* Contact Section: Paper Plane */
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="%23ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="28" y1="4" x2="14" y2="18"></line><polygon points="28 4 20 28 14 18 4 12 28 4"></polygon></svg>') 16 16, text;
 }
+
+/* Project Filter Tabs */
+.project-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.filter-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter-btn:hover {
+  background: rgba(124, 92, 255, 0.1);
+  border-color: var(--accent);
+}
+.filter-btn.active {
+  background: var(--accent);
+  color: var(--bg-color);
+  border-color: var(--accent);
+}
+
+/* Code Only Badge */
+.badge.code-only {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  border: 1px dashed var(--text-color);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.8;
+  cursor: not-allowed;
+}

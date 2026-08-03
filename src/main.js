@@ -499,4 +499,39 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.timeline-entry').forEach(el => {
     observer.observe(el);
   });
+
+  // Projects Filtering Logic
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const swiperWrapper = document.getElementById('projects-wrapper');
+  if (filterBtns.length > 0 && swiperWrapper) {
+    // Clone original slides to memory
+    const allSlides = Array.from(swiperWrapper.querySelectorAll('.project-slide')).map(slide => slide.cloneNode(true));
+    
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active state
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const filterValue = btn.getAttribute('data-filter');
+        
+        // Remove current slides
+        swiperWrapper.innerHTML = '';
+        
+        // Append matching slides
+        allSlides.forEach(slide => {
+          if (filterValue === 'all' || slide.getAttribute('data-category') === filterValue) {
+            swiperWrapper.appendChild(slide.cloneNode(true));
+          }
+        });
+        
+        // Update Swiper instance
+        const swiperContainer = document.querySelector('.projects-swiper');
+        if (swiperContainer && swiperContainer.swiper) {
+          swiperContainer.swiper.update();
+          swiperContainer.swiper.slideTo(0);
+        }
+      });
+    });
+  }
 });
