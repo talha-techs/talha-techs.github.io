@@ -466,6 +466,8 @@ function initSwipers() {
       direction: 'horizontal',
       slidesPerView: 'auto',
       spaceBetween: 20,
+      loop: true,
+      centeredSlides: true,
       mousewheel: { forceToAxis: true },
       keyboard: { enabled: true },
       pagination: { 
