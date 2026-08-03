@@ -11,13 +11,19 @@ html {
 }
 
 
-/* Default (Dark Mode) Icon Inversion */
-.invert-dark {
-  filter: invert(1) brightness(2);
+/* Black icon on dark background (default) → invert to white so it's visible */
+body:not(.light-mode) .icon-mono[data-native="black"] {
+  filter: invert(1);
 }
 
-body.light-mode .invert-dark {
-  filter: none;
+/* White icon on light background → invert to black so it's visible */
+body.light-mode .icon-mono[data-native="white"] {
+  filter: invert(1);
+}
+
+/* Smooth the flip when toggling theme */
+.icon-mono {
+  transition: filter 0.2s ease;
 }
 
 :root {
