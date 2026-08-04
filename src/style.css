@@ -925,6 +925,21 @@ body.light-mode .btn.btn-disabled {
   }
 }
 
+/* Badge */
+.ongoing-badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #00FF9C;
+  background: transparent;
+  border: 1px solid #00FF9C;
+  border-radius: 12px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
 /* Contact Form */
 .contact-form {
   width: 100%;
